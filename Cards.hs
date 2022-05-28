@@ -1,5 +1,8 @@
 module Cards 
-  ( Suit(..) , Card, allCards, cardSuit, cardNumber) where
+  ( Suit(..) 
+  , Card
+  , allCards
+  ) where
 
 data Suit = Hearts | Diamonds | Clubs | Spades
     deriving (Show, Read, Eq, Ord, Enum)

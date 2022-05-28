@@ -1,8 +1,9 @@
 module Main where
 import Cards
 import System.Random.Shuffle
+import Data.List
 
 main :: IO ()
 main = do
-  shuffledList <- shuffleM [1,2,3,4,5]
-  print shuffledList
+  shuffled <- shuffleM allCards
+  print . sort . take 5 $ shuffled
